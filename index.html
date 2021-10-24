@@ -9,6 +9,18 @@
         <input type="text" name="t" value="web" hidden>
         <input type="submit" value="Search" hidden>
     </form>
+    <footer>
+        <a href="https://is.muni.cz/auth/" class="card"><img src="./icons/muni.svg"/></a>
+        <a href="https://account.protonmail.com/switch" class="card"><img src="./icons/protonmail.png"/></a>
+        <a href="https://ctftime.org/" class="card"><img src="./icons/ctftime.svg"/></a>
+        <a href="https://app.hackthebox.eu/home" class="card"><img src="./icons/hackthebox.png"/></a>
+        <a href="https://cryptohack.org/challenges/" class="card"><img src="./icons/cryptohack.png"/></a>
+        <a href="https://tryhackme.com/dashboard" class="card"><img src="./icons/tryhackme.png"/></a>
+        <a href="https://www.codewars.com/dashboard" class="card"><img src="./icons/codewars.svg"/></a>
+        <a href="https://gchq.github.io/CyberChef/" class="card"><img src="./icons/cyberchef.svg"/></a>
+        <a href="https://github.com/" class="card"><img src="./icons/github.png"/></a>
+        <a href="https://www.google.com/" class="card"><img src="./icons/google.png"/></a>
+    </footer>
 </body>
     
 <style>
@@ -35,5 +47,39 @@
         background-size: cover;
         background-color: #1c0035;
     }
+    .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.8s;
+        width: 10em;
+        height: 10%;
+    }
+    footer {
+        margin: 0 4.5%;
+        width: 95%;
+        bottom: 2.5%;
+        position: absolute;
+    }
+
+    .card {
+        margin: 0 2%;
+    }
+
+    .card img {
+        margin: auto;
+        width: 5vw;
+        height: 10vh;
+    }
+
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        background-color: rgb(123, 43, 197);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+        padding: 2px 16px;
+}
 </style>
 </html> 

